@@ -10,14 +10,14 @@ repositories {
     }
 }
 
-group 'umbrella'
-version '1.0-SNAPSHOT'
+group 'org.umbrella'
+version '0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
 dependencies {
-    compile(
-        'org.codehaus.groovy:groovy-all:2.3.11',
-        'de.gesellix:docker-client:2019-03-26T11-38-01'
+    compile (
+        'org.codehaus.groovy:groovy-all:2.5.6',
+        'de.gesellix:docker-client:2018-01-26T21-28-05'
     )
     testCompile(
         'junit:junit:4.12',
@@ -38,3 +38,8 @@ sourceSets {
         }
     }
 }
+
+//task copyToLib(type: Copy) {
+//    from configurations.compile
+//    into "resources"
+//}
